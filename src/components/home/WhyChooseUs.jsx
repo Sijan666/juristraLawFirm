@@ -45,19 +45,18 @@ export default function WhyChooseUs() {
           {/* Left Column: Text & Stats */}
           <div className="">
             <ScrollReveal direction="right" duration={750} distance={28}>
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-medium tracking-tight mb-6 whitespace-nowrap">
+              <h2 className="text-2xl sm:text-4xl lg:text-[42px] font-medium tracking-tight mb-6 leading-tight">
                 Why <span className="font-serif font-bold italic text-[#D1B5B8]">Clients Choose</span> Our Firm?
               </h2>
-              <p className="text-gray-400 text-lg leading-relaxed mb-10">
+              <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-10">
                 We combine legal expertise with a client-first approach, helping you move forward with confidence and peace of mind.
               </p>
 
               {/* Stats Layout */}
-              <div className="flex flex-wrap items-start gap-x-12 gap-y-6 mb-20">
+              <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-start gap-x-8 sm:gap-x-12 gap-y-6 mb-20">
                 {STATS.map((stat, index) => (
                   <div key={index} className="flex flex-col">
-                    <h4 className="font-serif font-bold italic text-3xl sm:text-4xl text-[#D1B5B8] mb-1">
-                      {/* Final value-r invisible copy: width reserve kore, tai layout kapbe na */}
+                    <h4 className="font-serif font-bold italic text-2xl sm:text-4xl text-[#D1B5B8] mb-1">
                       <span className="relative inline-block">
                         <span className="invisible block" aria-hidden="true">
                           {stat.end.toLocaleString('en-US')}
@@ -85,7 +84,7 @@ export default function WhyChooseUs() {
               {/* CTA Button */}
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 bg-[#F2E8E9] text-[#5B1621] px-8 py-3.5 rounded-sm font-medium hover:bg-white transition-all duration-300 group"
+                className="inline-flex items-center gap-2 bg-[#F2E8E9] text-[#5B1621] px-6 sm:px-8 py-3.5 rounded-sm font-medium hover:bg-white transition-all duration-300 group text-sm sm:text-base"
               >
                 Learn More
                 <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />
