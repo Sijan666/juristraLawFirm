@@ -34,7 +34,7 @@ export const TrustedOrganizations = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20">
       <Container>
-        {/* Section Heading with Editorial Typography */}
+        {/* Section Heading */}
         <h2 className="text-center text-3xl sm:text-4xl lg:text-[42px] font-semibold tracking-tight text-[#111827] leading-tight mb-4">
           <span className="font-semibold text-[#111827]">Trusted by </span>
           <span className="font-serif font-bold italic text-[#611422]">
